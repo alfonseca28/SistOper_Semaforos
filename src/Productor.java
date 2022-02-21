@@ -24,7 +24,7 @@ public class Productor extends Thread {//esto es un hilo, el cual se va a ejecut
 
     @Override//esto es el codigo que se va a ejecutar concurrentemente cada que el producto produzca algo
     public void run() {
-        System.out.println("-----Etapa de produccion-----");
+        System.out.println("-----ETAPA DE PRODUCCION-----");
         for (int i = 0; i < size; i++) {//como se tiene una cantidad de elementos a colocar se va a hacer un recorrido de elementos
             try {
                 int aux = r.nextInt(10) + 1;//aqui se genera el numero aleatorio, esto dentro de un rango del numero 0 al 9

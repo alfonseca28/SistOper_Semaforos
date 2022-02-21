@@ -24,7 +24,7 @@ public class Consumidor extends Thread {//el consumidor hereda la funcionalidad 
 
     @Override
     public void run() {//esta es la funcion en la que se accede al buffer
-        System.out.println("-----Etapa de consumo-----");
+        System.out.println("-----ETAPA DE CONSUMO-----");
         for (int i = 0; i < size; i++) {
             try {
                 int aux = b.extraer();//aqui se tiene un apuntador auxiliar para saber que elemento se va a extraer del buffer
