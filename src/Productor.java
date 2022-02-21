@@ -14,7 +14,9 @@ import java.util.logging.Logger;
 public class Productor extends Thread {//esto es un hilo, el cual se va a ejecutar concurrentemente
 
     private Random r = new Random();//se crea el objeto para almacenar numeros en aleatorio
+    
     private Buffer b;//acceso al buffer
+    
     private int size;//controla poner los numeros en el buffer
 
     public Productor(Buffer b, int size) {

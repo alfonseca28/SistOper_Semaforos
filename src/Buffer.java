@@ -9,9 +9,13 @@ public class Buffer {
     //es la del recurso compartido
 
     private int b[];//se define un arreglo de enteros
+    
     private int i = 0, j = 0;//se crean dos apuntadores para saber cual es la posicion dispobivle en el buffer (la i es para el productor y la j para el consumidor)
+    
     private Semaphore mutex = new Semaphore(1, true);//nos permite la exclusion mutua (que un solo proceso pueda modificar el buffer) para que no haya colision
+    
     private Semaphore hayDatos = new Semaphore(0, true);//permite saber si en el buffer hay datos para poder consumirlos
+    
     private Semaphore hayEspacio;//esste semaforo valida para saber si cuando se vaya a poner algo en el buffer haya espacio en el buffer
 
     public Buffer(int tam) {
@@ -32,7 +36,7 @@ public class Buffer {
         //termina la seccion critica
         hayDatos.release();
     }
-
+    
     public int extraer() throws InterruptedException {
         //hay que verificar si hay datos y ya de ahi que se puedan extraer
         hayDatos.acquire();//verificamos si hay datos en el buffer

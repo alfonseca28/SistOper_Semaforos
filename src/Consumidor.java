@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 public class Consumidor extends Thread {//el consumidor hereda la funcionalidad del hilo, por ende se ejecuta concurrentemente
 
     private Buffer b;//el buffer es con lo que se interactua
+    
     private int size;//elementos que se quieren consumir del productor
 
     public Consumidor(Buffer b, int size) {
