@@ -9,7 +9,7 @@ import java.util.logging.Logger;
  */
 /**
  *
- * @author Damian Cazarin
+ * @author Aaron Alfonseca
  */
 public class Consumidor extends Thread {//el consumidor hereda la funcionalidad del hilo, por ende se ejecuta concurrentemente
 

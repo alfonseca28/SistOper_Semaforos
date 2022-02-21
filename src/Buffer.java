@@ -3,7 +3,7 @@ import java.util.concurrent.*;//esta librerias nos permite utilizar los semaforo
 
 /**
  *
- * @author Angel Gutierrrez
+ * @author Aaron Alfonseca
  */
 public class Buffer {
     //es la del recurso compartido

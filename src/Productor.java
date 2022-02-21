@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import java.util.Random;//aqui se importa la libreria para generar numeros aleatorios
+import java.util.Random;//aqui se importa la libreria para generar numeros aleatorios que se van a imprimir
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
